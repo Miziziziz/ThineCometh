@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/1yell5.wav-69d0a3104bea62a3eb1685d05e7c517d.sample"
+
+[deps]
+
+source_file="res://audio/alert_sounds/1yell5.wav"
+dest_files=[ "res://.import/1yell5.wav-69d0a3104bea62a3eb1685d05e7c517d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

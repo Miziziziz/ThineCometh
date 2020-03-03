@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://sprites/enemy.png" type="Texture" id=1]
+[ext_resource path="res://objects/Enemy.gd" type="Script" id=2]
+[ext_resource path="res://audio/alert_sounds/1yell5.wav" type="AudioStream" id=3]
+[ext_resource path="res://audio/alert_sounds/1yell4.wav" type="AudioStream" id=4]
+
+[sub_resource type="Animation" id=2]
+resource_name = "alert"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 7, 8, 9, 10 ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "idle"
+length = 1.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5 ]
+}
+
+[node name="Enemy" type="Node2D"]
+position = Vector2( -16, 24 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 4
+frame = 10
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+anims/alert = SubResource( 2 )
+anims/idle = SubResource( 1 )
+
+[node name="AlertSounds" type="Node" parent="."]
+
+[node name="AlertSound" type="AudioStreamPlayer2D" parent="AlertSounds"]
+position = Vector2( -16, 24 )
+stream = ExtResource( 4 )
+bus = "SFX"
+
+[node name="AlertSound2" type="AudioStreamPlayer2D" parent="AlertSounds"]
+position = Vector2( -16, 24 )
+stream = ExtResource( 3 )
+bus = "SFX"

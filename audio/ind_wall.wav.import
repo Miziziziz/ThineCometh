@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ind_wall.wav-93061efe1b4c18900db8d1b5d58f3141.sample"
+
+[deps]
+
+source_file="res://audio/ind_wall.wav"
+dest_files=[ "res://.import/ind_wall.wav-93061efe1b4c18900db8d1b5d58f3141.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

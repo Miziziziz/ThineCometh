@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=2]
+
+[ext_resource path="res://ui/uitheme.png" type="Texture" id=1]
+
+[resource]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 128, 128 )
+margin_left = 53.8786
+margin_right = 55.7135
+margin_top = 54.5759
+margin_bottom = 54.8329
