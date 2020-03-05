@@ -65,6 +65,9 @@ Created by Miziziziz
 Music and sfx are from public domain 
 or royalty-free sources"
 align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Panel" type="Panel" parent="Label"]
 show_behind_parent = true

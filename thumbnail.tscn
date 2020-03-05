@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://ui/basetheme.tres" type="StyleBox" id=1]
+[ext_resource path="res://objects/Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://objects/Player.tscn" type="PackedScene" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 19.0
+margin_top = 31.0
+margin_right = 70.0
+margin_bottom = 79.0
+custom_styles/panel = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="."]
+modulate = Color( 0.431373, 0.341176, 0.45098, 1 )
+
+[node name="Player" parent="Node2D" instance=ExtResource( 3 )]
+position = Vector2( 33.9865, 56 )
+
+[node name="Enemy" parent="Node2D" instance=ExtResource( 2 )]
+position = Vector2( 56, 56 )

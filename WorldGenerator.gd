@@ -19,7 +19,7 @@ var treasures = [
 	},
 	{
 		"scene_object": preload("res://treasures/Mantis.tscn"),
-		"header": "Treasure found:\nA Recently Divorced Praying Mantis",
+		"header": "Treasure found:\nA Recently Widowed Praying Mantis",
 		"message": "\"No officer, I haven't seen him in days\"",
 		"image": preload("res://sprites/portraits/prayingmantis.png")
 	},

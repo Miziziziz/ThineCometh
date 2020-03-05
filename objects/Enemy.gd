@@ -68,8 +68,14 @@ func has_line_of_sight(start_coord, end_coord, tilemap: TileMap):
 		if tilemap.get_cell(point[0], point[1]) >= 0:
 			return false
 	return true
+#
+#func _draw():
+#	for sp in sight_points:
+#		draw_circle(sp, 4, Color.red)
 
 func get_grid_path(start_coord, end_coord, astar: AStar2D, astar_points_cache: Dictionary):
+	#sight_points=[]
+	#update()
 	var path = astar.get_point_path(astar_points_cache[str(start_coord)], astar_points_cache[str(end_coord)])
 	return path
 
